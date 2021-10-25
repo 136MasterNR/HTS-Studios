@@ -56,5 +56,19 @@ h1,h2,h3,p{font-family: 'Rajdhani', sans-serif;}
 	font-size: 10px;
 	position: absolute;
 	bottom: 2px;
-	top:4px
+	top:4px;
+	max-height:0px;
+}
+.unclickable:not(.logo){
+    position:relative;
+}
+.blocked:after{
+    content: '';
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:1;
+    background: transparent;
 }
