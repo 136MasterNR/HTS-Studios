@@ -1,61 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-h1,h2,h3,p{font-family: 'Rajdhani', sans-serif;}
+:root{}
+
+body {
+	text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6,p{font-family: 'Rajdhani', sans-serif;}
 
 .background {
 	background: darkgray url("images/wall.jpg") no-repeat fixed center;
 	background-attachment: fixed;
 }
- /* Style the navigation bar */
 .navbar {
-  text-align: center;
-  width: 100%;
-  background-color: #00122e;
-  overflow: auto;
-  float: center;
-  margin-top: -10px;
-  border-radius: 0px 0px 10px 10px;
-  border: 2px solid;
+	text-align: center;
+	width: 100%;
+	background-color: #00122e;
+	overflow: auto;
+	float: center;
+	margin-top: -10px;
+	border-radius: 0px 0px 10px 10px;
+	border: 2px solid;
 }
 
-/* Navbar links */
 .navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: #3bb7ff;
-  text-decoration: none;
-  font-size: 17px;
+	font-family: monospace;
+	float: left;
+	text-align: center;
+	padding: 12px;
+	color: #3bb7ff;
+	text-decoration: none;
+	font-size: 17px;
 }
 
-/* Navbar links on mouse-over */
-.navbar a:hover:not(.active){
-  background-color: #002d63;
+.navbar a:hover:not(.active):not(.exclude){
+	background-color: #002d63;
 }
 
-/* Current/active navbar link */
 .active {
-  background-color: #0094eb;
-  color:white!important;
-  font-weight: bold
+	background-color: #0094eb;
+	color:white!important;
+	font-weight: bold
 }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
+@media screen and (max-width: 440px) {
+	.navbar a {
+		float: none;
+		display: block;
+	}
 }
+
 .logo{
 	position:absolute;
 	top:7px;
 	right:10px;
+	pointer-events: auto
 }
+
 #icon-alt{
 	font-size: 10px;
 	position: absolute;
 	bottom: 2px;
 	top:4px;
 	max-height:0px;
+}
+
+button {
+	background-color: #0094eb; /* Green */
+	border: 3px solid #002d63;
+	border-radius:20px;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+button:hover{
+	background-color: #3bb7ff;
+	border: 3px solid #0094eb;
 }
