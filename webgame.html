@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="def.css">
+		<meta charset="utf-8" /> 
+		<title>HTS-Studios: Webgame</title>
+		<style>
+		canvas{
+			background: rgb(7,8,21);
+			background: -moz-linear-gradient(130deg, rgba(7,8,21,1) 0%, rgba(42,81,176,1) 100%);
+			background: -webkit-linear-gradient(130deg, rgba(7,8,21,1) 0%, rgba(42,81,176,1) 100%);
+			background: linear-gradient(130deg, rgba(7,8,21,1) 0%, rgba(42,81,176,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070815",endColorstr="#2a51b0",GradientType=1);
+			display: block;
+			margin: 0 auto;
+		}
+		</style>
+	</head>
+<body class="background">
+	<nav class="navbar">
+		<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+		<a class="active" href="projects.html"><i class="fa fa-fw fa-folder-open"></i> Projects</a>
+		<a href="https://discord.gg/Qst63njdBG" target=”_blank”><i class="fa fa-fw fa-envelope"></i> Contact <i id="icon-alt" class="fa fa-fw fa-external-link"></i></small></a>
+		<a class="exclude" style="pointer-events: none;" href="index.html"><img class="logo" height="32" src="images\logo_hts.ico" alt="HTS"/></a>
+	</nav>
+	<h2 style="color:lightblue"><i style="color:#29d4ff" class="fa fa-fw fa-gamepad"></i> Use your Arrow Keys or your Cursor</h2>
+	<div>
+		<canvas id="myCanvas" width="960" height="480" style="position: absolute;top: 50%;left: 50%;margin-top: -300px;margin-left: -480px;border:2px solid #0095DD;border-radius:5px;"></canvas>
+		<script src="webgame.js"></script>
+	</div>
+</body>
+</html>
