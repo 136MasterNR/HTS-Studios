@@ -3,8 +3,8 @@ var ctx = canvas.getContext("2d");
 var ballRadius = 14;
 var x = canvas.width/2;
 var y = canvas.height-30;
-var dx = 2;
-var dy = -2;
+var dx = 7;
+var dy = -7;
 var paddleHeight = 13;
 var paddleWidth = 100;
 var paddleX = (canvas.width-paddleWidth)/2;
@@ -18,7 +18,7 @@ var brickPadding = 20;
 var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 var score = 0;
-var lives = 3;
+var lives = 4;
 
 var bricks = [];
 for(var c=0; c<brickColumnCount; c++) {
@@ -56,6 +56,7 @@ function mouseMoveHandler(e) {
     paddleX = relativeX - paddleWidth/2;
   }
 }
+
 function collisionDetection() {
   for(var c=0; c<brickColumnCount; c++) {
     for(var r=0; r<brickRowCount; r++) {
@@ -66,7 +67,7 @@ function collisionDetection() {
           b.status = 0;
           score++;
           if(score == brickRowCount*brickColumnCount) {
-            alert("YOU WIN, CONGRATS!");
+            alert("You win! Congrats!");
             document.location.reload();
           }
         }
@@ -139,14 +140,14 @@ function draw() {
     else {
       lives--;
       if(!lives) {
-        alert("GAME OVER");
+        alert("Game Over");
         document.location.reload();
       }
       else {
         x = canvas.width/2;
         y = canvas.height-30;
-        dx = 3;
-        dy = -3;
+        dx = dx;
+        dy = -dy;
         paddleX = (canvas.width-paddleWidth)/2;
       }
     }

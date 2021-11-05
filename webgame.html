@@ -26,7 +26,7 @@
 	<h2 style="color:lightblue"><i style="color:#29d4ff" class="fa fa-fw fa-gamepad"></i> Use your Arrow Keys or your Cursor</h2>
 	<div>
 		<canvas id="myCanvas" width="960" height="480" style="position: absolute;top: 50%;left: 50%;margin-top: -300px;margin-left: -480px;border:2px solid #0095DD;border-radius:5px;"></canvas>
-		<script src="webgame.js"></script>
+		<script src="webgame.js"></script><button type="button" onclick="paddleX = (canvas.width-paddleWidth)/2;requestAnimationFrame(draw);">Insane Mode</button><button type="button" onclick='alert("Paused");'>Pause</button>
 	</div>
 </body>
 </html>
