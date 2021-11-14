@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6,p{font-family: 'Rajdhani', sans-serif;}
 .background {
 	background: darkgray url("images/wall.jpg") no-repeat fixed center;
 	background-attachment: fixed;
+	background-size: cover;
 }
 .navbar {
 	text-align: center;
@@ -55,7 +56,8 @@ h1,h2,h3,h4,h5,h6,p{font-family: 'Rajdhani', sans-serif;}
 	position:absolute;
 	top:7px;
 	right:10px;
-	pointer-events: auto
+	pointer-events: auto;
+	height:32px;
 }
 
 #icon-alt{
@@ -80,4 +82,17 @@ button {
 button:hover{
 	background-color: #3bb7ff;
 	border: 3px solid #0094eb;
+}
+.text-version{
+    font-size: 1.3vw;
+	color:#30c7ff;
+}
+.text-version-alt{
+	color: #30c7ff;
+}
+.clickwebgame{
+	color:lightblue;
+}
+.download-url{
+	color:#2be040;
 }
