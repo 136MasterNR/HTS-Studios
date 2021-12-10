@@ -20,12 +20,18 @@
 	</nav>
 	<br/>
 	<div style="padding-right:100px;margin-left:20%">
-	<h1 style="color:white;font-size:20px;text-align:left;">CHANGELOG:<br/>
-		The Map is now interactable.<br/>
-		Added support for multiple levels.<br/>
-		Added new levels, 2 and 3.<br/>
-		The transitions are smoother.<br/>
-		Released new monsters.<br/>
+		<h1 style="color:white;font-size:20px;text-align:left;">- - CHANGELOG - -<br/><br/>
+			Replaced the systems "Colored Text" and "Text Overwriter" with the built-in ANSI system which is supported only on Windows 10 and higher. (ANSI.SYS) <br/><br/>
+			[THIS CHANGE IS IN DEVELOPMENT:] In the battle gameplay, added smoothly colored enemy HP bar. The HP color is special per enemy type. The HP bar tells the user what power the enemy poses and which weaknesses. Examples: (released) Red: This enemy has no special effects and can be killed with anything - (not released) Blue: This enemy has a very high defense and can die easily by explosion attacks. - etc... (Some of these features are not yet released, no gameplay effects will be noticed but only the colors will be displayed) <br/><br/>
+			In the battle gameplay, you can now use "atk {enemy number}" to hit an enemy you want. If you type an enemy that is either dead or does not exist, it will hit a random enemy. Example: "attack 2", "atk 3" <br/><br/>
+			Created a Developer's Tool (CMD) which can be ran and used in the menu by typing "cmd". It basically launches a Terminal inside the game, but through it you can control anything that is happening in the game. It will only be available on the Tester's Edition for Testing Purposes.<br/><br/>
+			Unicode UTF-8 is now fully supported on the console window.<br/><br/>
+			The console now supports all RGB colors. (16-bit to 24-bit) <br/><br/>
+			Created a new in-window popup which only appears on the menu. After you win a battle and level up, you will be notified that way. This will only work when you go back to the menu. <br/><br/>
+			Re-designed almost all User Interfaces. The menu is now completed changed, and much better. The settings look more fancier than ever. And, the shop is more shop than ever. What's left to re-design is just the battle gameplay, and finish up the map interface. <br/><br/>
+			Fixed first-start up issues and gameplay issues.<br/><br/>
+			No longer creates temp files in the main directory which were used to display text effects (it could some times bug and not delete the files it created)<br/><br/>
+			And many more changes which I forgor.
 		</h1>
 	</div>
 </body>
