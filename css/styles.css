@@ -59,6 +59,8 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+.external-link-project{font-size:12px}
+
 body,
 html {
     width: 100%;
