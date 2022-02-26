@@ -11,19 +11,27 @@
 <body style="background-color:black;color:white">
 	<h4>Battles of Batch - v0.211, v0.212, v0.230 CHANGELOG:</h4><br/>
 	<h5>v0.230:</5>
-	<p>- Fixed the audio manager.
+	<p>This is a very big update, which focuses changes on the strategy and the gameplay.
+	<br/>- Fixed the audio manager.
 	<br/>- The counter "total wins" now works properly.
 	<br/>- Made an error handler.
 	<br/>- Added command on main menu "update"; checks your connection between the server and you.
 	<br/>- Updated the Gameplay UI; less statistics, more visual changes.
+	<br/>- Added new feature; Skills. You can now upgrade your attack damage! In the future, you will be able to upgrade more things.
+	<br/>- Added new feature; Quests. Type quests in the main menu to check them out!
+	<br/>- Added new tab in the shop UI. Use "switch" to switch tabs, or use the name of the tab.
 	<br/>- Fixed the shop error messsages.
-	<br/>- Added the debug mode; which will revert essential changes and show more statistics. To activate, type CMD in the main menu, and them DEBUG. Use EXIT to return to the menu.
-	<br/>- Added new tab in the shop UI. Use "switch" to switch tabs.
-	<br/>- Added new feature; Quests. Type quests in the main meny to check them out!
-	<br/>- Rewrote the whole battle interface and background calculations. Most of the changes were done in the code. This includes the following features: Enemy.HP, Enemy.ATK, Player.HP, Player.ATK, Enemy.POS and Enemy.TYPE - (40% Done)
+	<br/>- Added the debug mode; which will revert essential changes and show more statistics. To activate, type CMD in the main menu, and then DEBUG. Use EXIT to return to the menu.
+	<br/>- Rewrote the whole battle interface and background calculations. Most of the changes were done in the code. This includes the following features: Enemy.HP, Enemy.ATK, Player.HP, Player.ATK, Enemy.POS and Enemy.TYPE
 	<br/>- Fixed in game "back" command, menu music didn't play when typing it.
-	<br/>- Added new option; shortcut keys! No need to type whole words, just press a button & go!
-	<br/>This product is not yet released, and this changelog will soon change again.
+	<br/>- Added new option; shortcut keys! No need to type whole words, just press a button & go! In game, when pressing A to attack, it should attack the first enemy until it's dead, the second and then the final enemy.
+	<br/>- Rewrote half of the battle process loader.
+	<br/>- Rebuilded all the battles. They are now a tiny bit more fair. This includes the following levels: 1, 2, 3, 4
+	<br/>- Added new levels; 5 & 6
+	<br/>- You now get a popup when you win a battle.
+	<br/>- You now get greater rewards as you complete higher levels.
+	<br/>- Rewrote the map design & code.
+	<br/>- It now logs errors in "./data/logs/errors.txt".
 	</p><br/>
 	<h5>v0.212:</5>
 	<p>- The audio manager was not able to read the settings properly.
@@ -32,11 +40,19 @@
 	<br/>- Changelogs now exist.
 	</p><br/>
 	<h5>v0.211:</5>
-	<p>- The updater now keeps the previous save files while updating.</p>
-	<h5></5>
-	<p>- The audio manager was not able to read the settings properly.
+	<p>- The updater now keeps the previous save files while updating.
+	<br/> The audio manager was not able to read the settings properly.
 	<br/>- Added a new a level, 4.
 	<br/>- The menu audio code was compressed.
+	</p>
+	<br/><br/><br/><br/>
+	</p><h4>Found but not resolved critical issues for v0.230</h5>
+	<p>1. While running, the program can exceed the recursive STACK limits, which is 302, and display this error:
+	<br/><samp>	******  B A T C H   R E C U R S I O N  exceeds STACK limits ******
+	<br/>	Recursion Count=302, Stack Usage=90 percent
+	<br/>	******       B A T C H   PROCESSING IS   A B O R T E D      ******</samp><br/>
+	<br/>2. The Audio Manager fails to either start or close properly on specific systems. This is caused by a window detections.
+	<br/><br/>Bugs that are not listed here were either fixed or not reported.
 	</p>
 </body>
 </html>
