@@ -1,4 +1,4 @@
-SET UPDATE.VER=0231
+SET UPDATE.VER=0235
 SET "UPDATE.URL=https://htssoft.tk/get-download/battlesofbatch-latest.zip"
 SET "CHANGELOG.URL=https://htssoft.tk/changelog.html"
-SET RESET.DATA=FALSE
+SET RESET.DATA=TRUE
