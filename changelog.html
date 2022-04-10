@@ -10,8 +10,23 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body style="background-color:black;color:white">
-	<h4>Battles of Batch (v0.211, v0.212, v0.230, v0.231, v0.235) CHANGELOG:</h4><br/>
-	<h5>v0.235:</5>
+	<h4>Battles of Batch (v0.211, v0.212, v0.230, v0.231, v0.235, v0.245) CHANGELOG:</h4><br/>
+	<h5 id="v0245">v0.245:</5>
+	<p>This update adds technical features and upgrades the gameplay.
+	<br/>- Added chapter 2 with 7 demo levels.
+	<br/>- In the map, you can now move forward 7 levels by pressing V or 7 backwards by pressing C. You can also type in "chapter {number}" to navigate between chapters, but it will always select the last level of every chapter.
+	<br/>- When you start the game and enter the map, it will automatically move you to your next battle.
+	<br/>- Created new DEMO movie animation which you can run through the CMD. Enter "cmd" at the menu and then enter "anime"
+	<br/>- Added new bossfight, level 7.
+	<br/>- Added new bossfight soundtrack, featured by pedi me arxes.
+	<br/>- Added a title to every level, and the next map now works properly.
+	<br/>- It now detects whether your device meets the requirements for the game to play audio.
+	<br/>- Max player level is now set to 50 and levelling up is much quicker.
+	<br/>- Added an animation when you win the battle, which just crosses the enemies frame by frame.
+	<br/>- Added a file identity verifier which activates when your game crashes. You can activate it manually by typing "verify files" at the menu.
+	<br/>- Added an auto refresher in battle. Works only when enabled shortcut keys. This is a temporal change.
+	</p><br/>
+	<h5 id="v0235">v0.235:</5>
 	<p>This is an update which fixes more technical issues, and makes the gameplay more fair.
 	<br/>- The audio manager now behaves properly on all system languages, no more crashes. (VER. 009000)
 	<br/>- The battle has greater rewards and more fair difficulty.
@@ -19,7 +34,7 @@
 	<br/>- You can now upgrade your Crit Rate skill.
 	<br/>- You can now upgrade your Max HP skill.
 	</p><br/>
-	<h5>v0.231:</5>
+	<h5 id="v0231">v0.231:</5>
 	<p>This update fixes technical issues, such as crashes.
 	<br/>- Fixed error "Missing operator" while in battle.
 	<br/>- Fixed random crashes caused by STACK limits with error "<samp>******  B A T C H   R E C U R S I O N  exceeds STACK limits ******</samp>"
@@ -29,7 +44,7 @@
 	<br/>- The "reset" command now works properly.
 	<br/>We deeply apologize if you encountered any of the above issues in the previous update. We will make sure they don't occure again in any future updates.
 	</p><br/>
-	<h5>v0.230:</5>
+	<h5 id="v0230">v0.230:</5>
 	<p>This update focuses on the strategy and the gameplay.
 	<br/>- Fixed the audio manager.
 	<br/>- The counter "total wins" now works properly.
@@ -52,21 +67,21 @@
 	<br/>- Rewrote the map design & code.
 	<br/>- It now logs errors in "./data/logs/errors.txt".
 	<br/>- The refresh command now works on all UIs. If shortcut keys enabled, use the key R to refresh.
-	</p><br/>
+	</p id="v0212"><br/>
 	<h5>v0.212:</5>
 	<p>- The audio manager was not able to read the settings properly.
 	<br/>- Added new level, 4.
 	<br/>- The menu audio code was compressed.
 	<br/>- Changelogs now exist.
 	</p><br/>
-	<h5>v0.211:</5>
+	<h5 id="v0211">v0.211:</5>
 	<p>- The updater now keeps the previous save files while updating.
 	<br/>- Created this changelog.
 	<br/>- The audio manager was not able to read the settings properly.
 	<br/>- The menu audio code was compressed.
 	</p>
 	<br/><br/><br/><br/>
-	</p><h4>Found but not resolved critical issues for ~v0.231</h5>
+	</p id="issues"><h4>Found but not resolved critical issues for ~v0.231</h5>
 	<p>1. Running the game in Windows Terminal will cause various issues to its child tasks, such as the "choice.exe" task. While a child task is running, and you stop the game, an infinite number of errors occure. This is all because of Windows Terminal and it is not something that we can fix.
 	<br/>
 	<br/><br/>Bugs that are not listed here were either fixed or not reported.
