@@ -1,4 +1,4 @@
 SET UPDATE.VER=0305
-SET "UPDATE.URL=https://htssoft.tk/get-download/battlesofbatch-latest.zip"
-SET "CHANGELOG.URL=https://github.com/136MasterNR/Battles-of-Batch/releases"
+SET "UPDATE.URL=https://136masternr.github.io/HTS-Studios/get-download/battlesofbatch-latest.zip"
+SET "CHANGELOG.URL=136MasterNR/Battles-of-Batch/releases"
 SET RESET.DATA=TRUE
